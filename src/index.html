@@ -1,0 +1,419 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="../dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.min.css">
+  
+</head>
+<body>
+
+  <!-- ========NavBar Part Start======= -->
+
+    <nav class="navbar absolute w-[100%] mt-[30px] ">
+      <div class="relative">
+        <div class="sm:container sm:mx-auto lg:navbar-container">
+             <a href="#"> <img src="img/logo.png" alt=""> </a>
+            <label for="toggle-btn" class="toggle-btn-responsive lg:toggle-btn md:!right-[65px]">
+                <i class="fas fa-bars-progress"></i>
+            </label>
+            <input id="toggle-btn" type="checkbox" hidden />
+            <div class="navbar-responsive lg:navbar-desktop ">
+                <ul class="sm:flex-wrap sm:flex 
+                mob:bg-color01 mob:text-white sm:text-color01 mob:absolute mob:right-0 mob:px-[10px] mob:py-[30px]  sm:bg-transparent sm:relative lg:justify-end md:justify-center !gap-[100px] font-popp  font-light text-[16px] duration-[0.4s] 
+                max-[1023.99px]:justify-center">
+                  <li  class="relative font-semibold  hover:before:block hover:before:absolute hover:before:w-[20px] hover:before:h-[3px] hover:before:content-[''] hover:before:rounded-[10px] hover:before:left-[50%] hover:before:-translate-x-[50%] hover:before:-bottom-[5px] hover:before:bg-color02 before:duration-[0.4s] hover:duration-[0.4s] duration-[0.4s] hover:before:duration-[0.4s] mob:mb-[10px]" >
+                    <a class="duration-[0.4s]" href="#">Home</a>
+                  </li>
+                  <li class="mob:mb-[10px] relative hover:before:block hover:before:absolute hover:before:w-[20px] hover:before:h-[3px] hover:before:content-[''] hover:before:rounded-[10px] hover:before:left-[50%] hover:before:-translate-x-[50%] hover:before:-bottom-[5px] hover:before:bg-color02 before:duration-[0.4s] hover:duration-[0.4s] duration-[0.4s] hover:before:duration-[0.4s] " >
+                    <a href="#">About</a>
+                  </li>
+                  <li class="relative hover:before:block hover:before:absolute hover:before:w-[20px] hover:before:h-[3px] hover:before:content-[''] hover:before:rounded-[10px] hover:before:left-[50%] hover:before:-translate-x-[50%] hover:before:-bottom-[5px] hover:before:bg-color02 before:duration-[0.4s] hover:duration-[0.4s] duration-[0.4s] hover:before:duration-[0.4s] group mob:mb-[10px]" >
+                    <a  href="#">Properties <i class="fa-solid fa-chevron-down !text-[12px] ml-[5px]"></i></a>
+
+                    <!-- Dropdown menu -->
+                  
+                      <ul class="py-1 absolute invisible group-hover:visible top-[40px] flex-wrap gap-[10px] bg-white border-b-2 border-color01 shadow">
+                          <li class=" hover:bg-gray-100 text-gray-700 px-4 py-2">
+                              <a href="#" >Properties</a>
+                          </li>
+                          <li class="hover:bg-gray-100 text-gray-700 px-4 py-2"c>
+                              <a href="#" >Properties</a>
+                          </li>
+                          <li>
+                              <a class="hover:bg-gray-100 text-gray-700 px-4 py-2" href="#" >Properties</a>
+                          </li>
+                          <li class="hover:bg-gray-100 text-gray-700  px-4 py-2">
+                              <a href="#" >Properties</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="relative hover:before:block hover:before:absolute hover:before:w-[20px] hover:before:h-[3px] hover:before:content-[''] hover:before:rounded-[10px] hover:before:left-[50%] hover:before:-translate-x-[50%] hover:before:-bottom-[5px] hover:before:bg-color02 before:duration-[0.4s] hover:duration-[0.4s] duration-[0.4s] hover:before:duration-[0.4s]" >
+                    <a href="#">Contact</a>
+                  </li>
+
+                </ul>
+            
+              </div>
+            </div>
+      </div>
+    </nav>
+
+  <!-- ========NavBar Part End======= -->
+
+
+  <!-- ========Banner Part Start======= -->
+  
+  <section class="bg-bodycolor pt-[190px] pb-[120px] lg:pb-[300px] max-[639.99px]:pt-[150px] max-[639.99px]:pb-[100px]">
+    <div class="lg:container sm:mx-auto flex">
+      <div class="lg:w-2/4 xl:w-2/4 max-[639.99px]:w-full">
+          <h1 class="font-popp  font-semibold text-color01 mob:text-[35px] max-[639.99px]:text-center md:text-[60px] lg:text-[56px] max-[1023px]:text-center">
+            Temukan Hunian Keluarga Sesuai Keinginanmu
+          </h1>
+          <p class="font-popp font-light text-[16px] text-pcolor w-[100%] lg:max-w-[544px]  mt-[25px] mb-[56px] max-[1023px]:text-center">
+            Menyediakan hunian bagi keluarga anda dengan varian pilihan dan lokasi yang strategis di kota anda dengan cara yang lebih mudah.
+          </p>
+          <div class="relative max-[1023px]:text-center">
+            <input class="py-[23px] pl-[45px] rounded-[15px] placeholder:font-popp placeholder:font-light placeholder:text-[15px] w-[100%] max-[1023px]:max-w-[675px] lg:max-w-[675px] " type="text" placeholder="Search location, properties, residental group">
+            <i class="fa-solid fa-location-dot absolute  
+            md:left-[20px] sm:left-[12px] max-[639.99px]:left-[15px] lg:left-[18px] top-[50%] -translate-y-[50%]"></i>
+            <button class="max-[639.99px]:hidden px-[41px] py-[13px] bg-color01 text-white font-popp font-semibold text-[16px] rounded-[10px] absolute 2xl:right-[102px] top-[50%] -translate-y-[50%]  border-[1px] border-color01 hover:bg-transparent hover:text-color01 duration-[0.4s] md:right-[12px] xl:right-[12px]  sm:right-[12px] max-[639.99px]:-right-[17px] max-[1023px]:right-[62px] ">
+              Search
+            </button>
+          </div>
+          <div class="flex  mt-[56px] ">
+              <div class="lg:w-3/5">
+                  <div class="flex max-[639.99px]:flex-wrap gap-x-[72px] ">
+                        <div class="max-[639.99px]:w-full w-1/3 max-[639.99px]:text-center max-[639.99px]:border-b-[2px] max-[639.99px]:pb-[40px] max-[639.99px]:border-color01">
+                          <h2 class="font-popp text-[56px] font-semibold text-color01">
+                            200<span class="text-textsecond">+</span>
+                          </h2>                      
+                          <p class="font-popp font-light text-[16px] text-pcolor">
+                            Residental grup telah bergabung
+                          </p>
+                        </div>
+                        <div class="max-[639.99px]:w-full w-1/3 max-[639.99px]:text-center max-[639.99px]:border-b-[2px] max-[639.99px]:pb-[40px] max-[639.99px]:border-color01 max-[639.99px]:pt-[40px]">
+                          <h2 class="font-popp text-[56px] font-semibold text-color01">
+                            10<span class="text-textsecond">+</span>
+                          </h2>                      
+                          <p class="font-popp font-light text-[16px] text-pcolor">
+                            Sudah berpengalaman 
+                          </p>
+                        </div>
+                        <div class="max-[639.99px]:w-full w-1/3 max-[639.99px]:text-center max-[639.99px]:pt-[40px]">
+                          <h2 class="font-popp text-[56px] font-semibold text-color01">
+                            999<span class="text-textsecond">+</span>
+                          </h2>                      
+                          <p class="font-popp font-light text-[16px] text-pcolor">
+                            Properti tersedia di berbagai Kota 
+                          </p>
+                        </div>
+                  </div>  
+              </div>
+              <div class="lg:w-1/5">
+
+              </div>
+          </div>
+         
+      </div>
+
+      <div class="w-2/4 flex justify-end max-[1023px]:hidden">
+          <img class="-mt-[50px]" src="img/banner.png" alt="">
+      </div>
+
+
+    </div>
+  </section>
+  
+  <!-- ========Banner Part End======= -->
+
+  <!-- ========Cepat Part Start======= -->
+  
+  <section class="py-[100px]">
+    <div class="sm:container sm:mx-auto">
+      <h1 class="max-w-[540px] w-[100%] font-popp font-semibold text-[36px] text-color01 mb-[65px] max-[639.99px]:text-center">
+        Tahapan Pembelian Properti yang Mudah dan Cepat
+      </h1>
+  <div class="sm:flex max-[639px]:flex-wrap gap-[10px] max-[639px]:flex lg:gap-[155px]">
+    <div class="sm:w-1/3 max-[639px]:w-[100%]">
+        <div class="border-[1px] border-bodycolor px-[33px] py-[20px] rounded-[10px] relative ">
+             <h2 class="font-popp font-medium text-[16px] mb-[3px] before:content-[''] before:w-[8px] before:h-[30px] before:bg-textsecond before:absolute before:left-0 before:rounded-[5px] after:content-['01'] after:absolute after:right-[15px] after:text-textsecond ">
+              Pilih Properti
+             </h2>
+             <p class="font-popp font-light text-[16px] text-pcolor mb-[30px] lg:mb-[53px]">
+              Cari properti yang diinginkan sesuai dengan kriteria anda dan keluarga. Cara memilih properti yang bijak dapat anda baca lebih lanjut di sini
+             </p>
+                  <div class=" relative group duration-[0.4s]">
+
+                  <a class="z-50 relative font-popp font-medium text-[16px]  duration-[0.4s]" href="#">
+                    Baca lebih Lanjut <i class="fas fa-arrow-right"></i>
+                  </a>
+                  <!-- <p class="absolute top-0 z-1 before:content-[''] before:w-[40px] group-hover:before:w-[200px] before:h-[30px] before:bg-color03 before:absolute before:-left-[10px] before:-top-[2px] before:z-0">
+                    Lorem ipsum dolor sit amet.
+                  </p> -->
+                  <a class="absolute top-0 z-1 before:content-[''] before:w-[40px] group-hover:before:w-[200px] before:h-[30px] before:bg-color03 before:absolute before:-left-[10px] before:-top-[2px] before:z-1 text-transparent left-0 group-hover:before:duration-[0.4s] before:duration-[0.4s]" href="#">
+                    Lorem ipsum dolor sit
+                  </a>
+                </div>
+           
+        </div>
+    </div>
+    <div class="sm:w-1/3 max-[639px]:w-[100%]">
+      <div class="border-[1px] border-bodycolor px-[33px] py-[20px] rounded-[10px] relative">
+        <h2 class="font-popp font-medium text-[16px] mb-[3px] before:content-[''] before:w-[8px] before:h-[30px] before:bg-textsecond before:absolute before:left-0 before:rounded-[5px] after:content-['02'] after:absolute after:right-[15px] after:text-textsecond ">
+          Proses Booking
+        </h2>
+        <p class="font-popp font-light text-[16px] text-pcolor mb-[102px] lg:mb-[78px]">
+          Pembayaran dalam bentuk sejumlah uang sebagai komitmen memesan unit properti tertentu.
+        </p>
+        <div class=" relative group duration-[0.4s]">
+
+          <a class="z-50 relative font-popp font-medium text-[16px]  duration-[0.4s]" href="#">
+            Baca lebih Lanjut<i class="fas fa-arrow-right"></i>
+          </a>
+          <!-- <p class="absolute top-0 z-1 before:content-[''] before:w-[40px] group-hover:before:w-[200px] before:h-[30px] before:bg-color03 before:absolute before:-left-[10px] before:-top-[2px] before:z-0">
+            Lorem ipsum dolor sit amet.
+          </p> -->
+          <a class="absolute top-0 z-1 before:content-[''] before:w-[40px] group-hover:before:w-[200px] before:h-[30px] before:bg-color03 before:absolute before:-left-[10px] before:-top-[2px] before:z-1 text-transparent left-0 group-hover:before:duration-[0.4s] before:duration-[0.4s]" href="#">
+            Lorem ipsum dolor sit
+          </a>
+        </div>
+   </div>
+    </div>
+    <div class="sm:w-1/3 max-[639px]:w-[100%]">
+      <div class="border-[1px] border-bodycolor px-[33px] py-[20px] rounded-[10px] relative">
+        <h2 class="font-popp font-medium text-[16px] mb-[3px] before:content-[''] before:w-[8px] before:h-[30px] before:bg-textsecond before:absolute before:left-0 before:rounded-[5px] after:content-['03'] after:absolute after:right-[15px] after:text-textsecond ">
+         Pilih Properti
+        </h2>
+        <p class="font-popp font-light text-[16px] text-pcolor mb-[53px]">
+          Pembiayaan KPR untuk pembeli rumah dengan skema pembiayaan jika diperlukan dan dilanjutkan proses sertifkasi HGB.
+        </p>
+        <div class=" relative group duration-[0.4s]">
+
+          <a class="z-50 relative font-popp font-medium text-[16px]  duration-[0.4s]" href="#">
+            Baca lebih Lanjut <i class="fas fa-arrow-right"></i>
+          </a>
+          
+          <a class="absolute top-0 z-1 before:content-[''] before:w-[40px] group-hover:before:w-[200px] before:h-[30px] before:bg-color03 before:absolute before:-left-[10px] before:-top-[2px] before:z-1 text-transparent left-0 group-hover:before:duration-[0.4s] before:duration-[0.4s]" href="#">
+            Lorem ipsum dolor sit
+          </a>
+        </div>
+   </div>
+    </div>
+  </div>
+  </div>
+</section>
+  <!-- ========Cepat Part End======= -->
+
+
+  <!-- ========Residen Part Start======= -->
+  
+  <section class="pt-[68px] pb-[80px] lg:pb-[335px] bg-bodycolor">
+    <div class="sm:container sm:mx-auto max-[639px]:text-center">
+      <p class="font-popp font-medium text-[16px] text-textsecond ">
+        Pilihan konsumen
+      </p>
+      <h2 class="font-popp text-[36px] font-semibold text-color01 mb-[65px]">
+        Residen Favorit
+      </h2>
+
+      <div class="flex">
+          <div class="lg:w-1/2 relative">
+            <img class="absolute z-10" src="img/redesign01.png" alt="">
+            <img class="absolute z-20 left-[167px] top-[60px] drop-shadow-3xl lg:left-[115px] xl:visible" src="img/redesgin02.png" alt="">
+          </div>
+          <div class="lg:w-1/2 ">
+            <h2 class="font-semibold font-popp text-[36px] mb-[24px] text-color01">
+              Bangunan yang dirancang oleh Aristektur Handal
+            </h2>
+            <p class="font-light font-popp text-[16px] ">
+              Tanpa diragukan, properti yang disediakan dalam webiste kami merupakan hasil kerjasama secara profesional dengan para Arsitektur ternama dan Developer yang terpercaya.
+            </p>
+
+            <a class="py-[13px] px-[48px] bg-transparent border-[1px] border-color01 rounded-[10px] inline-block mt-[48px] hover:bg-color01 hover:text-white duration-[0.4s] font-popp font-semibold text-[16px] sm:mr-[48px]" href="#"> <i class="fa-solid fa-phone"></i> Hubungi Kami</a>
+
+            <a class="py-[13px] px-[48px] bg-color01 border-[1px] border-color01 rounded-[10px] inline-block mt-[48px] hover:bg-transparent hover:text-color01 duration-[0.4s]  font-popp font-semibold text-[16px] text-white" href="#"> Explore lebih banyak</a>
+            
+          </div>
+      </div>
+
+    </div>
+  </section>
+  
+  <!-- ========Residen Part End======= -->
+  
+  
+  <!-- ========Kota Part Start======= -->
+
+  <section class="py-[68px]">
+    <div class="sm:container sm:mx-auto">
+      <p class="font-popp font-medium text-[16px] text-textsecond max-[639px]:text-center">
+        Pilihan Auditor
+      </p>
+      <h2 class="font-popp text-[36px] font-semibold text-color01 mb-[65px] max-[639px]:text-center">
+        Residen Berbagai Kota
+      </h2>
+
+
+      <div class="flex gap-x-[49px] max-[639.99px]:flex-wrap max-[639px]:justify-center">
+          <div class="sm:w-1/3 max-[639px]:w-[80%]">
+            
+            <div>
+              <div>
+                <img class="mb-[16px] w-full" src="img/kota01.png" alt="">
+              </div>
+              <div>
+                <h2 class="font-popp font-medium text-[24px] text-color01 mb-[8px]">
+                  Magnolia Surabaya
+                </h2>
+                <p class="font-light font-popp text-[16px]">
+                  Jl. Gatot Subroto No.KM.6,8, RT.001/RW.008, Jatake, Kec. Jatiuwung, K   ota Tangerang, Banten 15136
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="sm:w-1/3 max-[639px]:w-[80%] max-[639px]:mt-[30px]">
+            <div>
+              <div>
+                <img class="mb-[16px] w-full" src="img/kota02.png" alt="">
+              </div>
+              <div>
+                <h2 class="font-popp font-medium text-[24px] text-color01 mb-[8px]">
+                  Pinang Residences
+                </h2>
+                <p class="font-light font-popp text-[16px]">
+                  Jl. Deplu Raya No.16 RT.5, RW.003
+                  Bintaro, Pesanggrahan, Jakarta Selatan 12330
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="sm:w-1/3 max-[639px]:w-[80%] max-[639px]:mt-[30px]">
+            <div>
+              <div>
+                <img class="mb-[16px] w-full" src="img/kota03.png" alt="">
+              </div>
+              <div>
+                <h2 class="font-popp font-medium text-[24px] text-color01 mb-[8px]">
+                  South Grove
+                </h2>
+                <p class="font-light font-popp text-[16px]">
+                  1 No.1, RT.1/RW.1, Lb. Bulus, Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12440
+                </p>
+              </div>
+            </div>
+
+          </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- ========Kota Part End======= -->
+  
+  <!-- ========Footer Part Start======= -->
+
+  <section class="pt-[48px] bg-bodycolor">
+    <div class="sm:container sm:mx-auto sm:flex gap-[48px] max-[639.99px]:text-center">
+          <div class="w-3/5 font-popp font-semibold text-[36px] text-color01 max-[639px]:w-full">
+            <h2>
+              Hubungi Kami
+            </h2>
+            
+            
+        <div class="lg:hidden bg-color01 text-white text-center text-[20px] px-[10px] py-[20px] sm:w-[60%] border-color02 rounded-[10px] mt-[25px] max-[639.99px]:">
+            <a href="#">Contact Us</a>
+        </div>
+
+            <div class="flex max-[1023px]:hidden gap-[48px] mt-[63px]">
+
+                <div class="w-1/2">
+
+                  <div class="border-[1px] border-textsecond2 rounded-[10px] p-[24px]">
+
+                    <div class="flex ">
+                          <div class="w-1/5 text-center">
+                            <i class="fa-solid fa-phone"></i>
+                          </div>
+                          <div class="w-2/4 text-left">
+                              <h3 class="font-popp text-[18px] font-medium text-color01 ">Call</h3>
+                              <a class="font-popp text-[18px] font-medium text-color01" href="tel:+6281232936733">+6281232936733</a>
+                              
+                          </div>
+                    </div>
+                    <div>
+                      <a class="block font-popp text-[16px] font-semibold text-textsecond text-center py-[14px] bg-textsecond2 rounded-[10px]" href="tel:+6281232936733">Call Now</a>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="w-1/2">
+                  <div class="border-[1px] border-textsecond2 rounded-[10px] p-[24px]">
+
+                    <div class="flex">
+                          <div class="w-1/5 text-center">
+                            <i class="fa-solid fa-envelope"></i>
+                          </div>
+                          <div class="w-2/4 text-left">
+                              <h3 class="font-popp text-[18px] font-medium text-color01 ">Email</h3>
+                              <a class="font-popp text-[18px] font-medium text-color01" href="mailto:omahindev@gmail.com">omahindev@gmail.com</a>
+                              
+                          </div>
+                    </div>
+                    <div>
+                      <a class="block font-popp text-[16px] font-semibold text-white text-center py-[14px] bg-textsecond rounded-[10px]" href="mailto:omahindev@gmail.com">Email Now</a>
+                    </div>
+
+                  </div>
+                </div>
+
+            </div>
+
+
+          </div>
+          <div class="lg:w-1/5">
+            <h2 class="font-popp font-semibold text-[36px] max-[639.99px]:mt-[50px]">
+              Penghargaan
+            </h2>
+
+            <div class="flex max-[639.99px]:justify-center items-center gap-[32px] lg:pt-[60px] sm:-ml-[20px]">
+              <div>
+                <img src="img/footer01.png" alt="Footer Image">
+              </div>
+              <div>
+                <img src="img/footer02.png" alt="Footer Image">
+              </div>
+              </div>
+              
+             
+
+            </div>
+            
+          </div>
+    </div>
+    <div class="py-[31px] mt-[48px] bg-color01">
+      <div class="sm:container max-[639.99px]:w-[90%] max-[639.99px]:mx-auto sm:mx-auto flex justify-between items-center sm:gap-[65px] text-white">
+        <img src="img/footerlogo.png" alt="Footer Logo">
+        <div class="flex gap-[64px]">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-tumblr"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- ========Footer Part End======= -->
+</body>
+</html>
